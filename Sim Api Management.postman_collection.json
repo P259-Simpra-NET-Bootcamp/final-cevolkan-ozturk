@@ -1,0 +1,2016 @@
+{
+	"info": {
+		"_postman_id": "58d5661c-3596-469d-a4a0-ec6a2deb6b74",
+		"name": "Sim Api Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22544656"
+	},
+	"item": [
+		{
+			"name": "simapi",
+			"item": [
+				{
+					"name": "v1",
+					"item": [
+						{
+							"name": "User",
+							"item": [
+								{
+									"name": "{id}",
+									"item": [
+										{
+											"name": "/simapi/v1/User/:id",
+											"request": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"name\": \"<string>\",\n  \"surname\": \"<string>\",\n  \"userName\": \"<string>\",\n  \"email\": \"<string>\",\n  \"role\": \"<string>\",\n  \"password\": \"<string>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/simapi/v1/User/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"simapi",
+														"v1",
+														"User",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "<integer>"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "Success",
+													"originalRequest": {
+														"method": "PUT",
+														"header": [
+															{
+																"key": "Content-Type",
+																"value": "application/json"
+															},
+															{
+																"description": "Added as a part of security scheme: bearer",
+																"key": "Authorization",
+																"value": "Bearer <token>"
+															}
+														],
+														"body": {
+															"mode": "raw",
+															"raw": "{\n  \"name\": \"<string>\",\n  \"surname\": \"<string>\",\n  \"userName\": \"<string>\",\n  \"email\": \"<string>\",\n  \"role\": \"<string>\",\n  \"password\": \"<string>\"\n}",
+															"options": {
+																"raw": {
+																	"headerFamily": "json",
+																	"language": "json"
+																}
+															}
+														},
+														"url": {
+															"raw": "{{baseUrl}}/simapi/v1/User/:id",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"simapi",
+																"v1",
+																"User",
+																":id"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												}
+											]
+										},
+										{
+											"name": "/simapi/v1/User/:id",
+											"request": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/simapi/v1/User/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"simapi",
+														"v1",
+														"User",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "<integer>"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "Success",
+													"originalRequest": {
+														"method": "DELETE",
+														"header": [
+															{
+																"description": "Added as a part of security scheme: bearer",
+																"key": "Authorization",
+																"value": "Bearer <token>"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/simapi/v1/User/:id",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"simapi",
+																"v1",
+																"User",
+																":id"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "admin",
+									"item": [
+										{
+											"name": "admin",
+											"request": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"name\": \"<string>\",\n  \"surname\": \"<string>\",\n  \"userName\": \"<string>\",\n  \"email\": \"<string>\",\n  \"role\": \"<string>\",\n  \"password\": \"<string>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/simapi/v1/User/admin",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"simapi",
+														"v1",
+														"User",
+														"admin"
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "Success",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Content-Type",
+																"value": "application/json"
+															},
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															},
+															{
+																"description": "Added as a part of security scheme: bearer",
+																"key": "Authorization",
+																"value": "Bearer <token>"
+															}
+														],
+														"body": {
+															"mode": "raw",
+															"raw": "{\n  \"name\": \"<string>\",\n  \"surname\": \"<string>\",\n  \"userName\": \"<string>\",\n  \"email\": \"<string>\",\n  \"role\": \"<string>\",\n  \"password\": \"<string>\"\n}",
+															"options": {
+																"raw": {
+																	"headerFamily": "json",
+																	"language": "json"
+																}
+															}
+														},
+														"url": {
+															"raw": "{{baseUrl}}/simapi/v1/User/admin",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"simapi",
+																"v1",
+																"User",
+																"admin"
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"id\": \"<integer>\",\n  \"name\": \"<string>\",\n  \"surname\": \"<string>\",\n  \"userName\": \"<string>\",\n  \"email\": \"<string>\",\n  \"role\": \"<string>\",\n  \"password\": \"<string>\",\n  \"status\": \"<integer>\",\n  \"lastActivity\": \"<dateTime>\",\n  \"passwordRetryCount\": \"<integer>\",\n  \"pointBalance\": \"<double>\"\n}"
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "/simapi/v1/User",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/simapi/v1/User",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"simapi",
+												"v1",
+												"User"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													},
+													{
+														"description": "Added as a part of security scheme: bearer",
+														"key": "Authorization",
+														"value": "Bearer <token>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/simapi/v1/User",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"simapi",
+														"v1",
+														"User"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "[\n  {\n    \"id\": \"<integer>\",\n    \"name\": \"<string>\",\n    \"surname\": \"<string>\",\n    \"userName\": \"<string>\",\n    \"email\": \"<string>\",\n    \"role\": \"<string>\",\n    \"password\": \"<string>\",\n    \"status\": \"<integer>\",\n    \"lastActivity\": \"<dateTime>\",\n    \"passwordRetryCount\": \"<integer>\",\n    \"pointBalance\": \"<double>\"\n  },\n  {\n    \"id\": \"<integer>\",\n    \"name\": \"<string>\",\n    \"surname\": \"<string>\",\n    \"userName\": \"<string>\",\n    \"email\": \"<string>\",\n    \"role\": \"<string>\",\n    \"password\": \"<string>\",\n    \"status\": \"<integer>\",\n    \"lastActivity\": \"<dateTime>\",\n    \"passwordRetryCount\": \"<integer>\",\n    \"pointBalance\": \"<double>\"\n  }\n]"
+										}
+									]
+								},
+								{
+									"name": "/simapi/v1/User",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"name\": \"<string>\",\n  \"surname\": \"<string>\",\n  \"userName\": \"<string>\",\n  \"email\": \"<string>\",\n  \"role\": \"<string>\",\n  \"password\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/simapi/v1/User",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"simapi",
+												"v1",
+												"User"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													},
+													{
+														"description": "Added as a part of security scheme: bearer",
+														"key": "Authorization",
+														"value": "Bearer <token>"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"name\": \"<string>\",\n  \"surname\": \"<string>\",\n  \"userName\": \"<string>\",\n  \"email\": \"<string>\",\n  \"role\": \"<string>\",\n  \"password\": \"<string>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/simapi/v1/User",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"simapi",
+														"v1",
+														"User"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"id\": \"<integer>\",\n  \"name\": \"<string>\",\n  \"surname\": \"<string>\",\n  \"userName\": \"<string>\",\n  \"email\": \"<string>\",\n  \"role\": \"<string>\",\n  \"password\": \"<string>\",\n  \"status\": \"<integer>\",\n  \"lastActivity\": \"<dateTime>\",\n  \"passwordRetryCount\": \"<integer>\",\n  \"pointBalance\": \"<double>\"\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Token",
+							"item": [
+								{
+									"name": "SignUp",
+									"item": [
+										{
+											"name": "/simapi/v1/Token/SignUp",
+											"request": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"name\": \"<string>\",\n  \"surname\": \"<string>\",\n  \"userName\": \"<string>\",\n  \"email\": \"<string>\",\n  \"role\": \"<string>\",\n  \"password\": \"<string>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/simapi/v1/Token/SignUp",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"simapi",
+														"v1",
+														"Token",
+														"SignUp"
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "Success",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Content-Type",
+																"value": "application/json"
+															},
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															},
+															{
+																"description": "Added as a part of security scheme: bearer",
+																"key": "Authorization",
+																"value": "Bearer <token>"
+															}
+														],
+														"body": {
+															"mode": "raw",
+															"raw": "{\n  \"name\": \"<string>\",\n  \"surname\": \"<string>\",\n  \"userName\": \"<string>\",\n  \"email\": \"<string>\",\n  \"role\": \"<string>\",\n  \"password\": \"<string>\"\n}",
+															"options": {
+																"raw": {
+																	"headerFamily": "json",
+																	"language": "json"
+																}
+															}
+														},
+														"url": {
+															"raw": "{{baseUrl}}/simapi/v1/Token/SignUp",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"simapi",
+																"v1",
+																"Token",
+																"SignUp"
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"success\": \"<boolean>\",\n  \"message\": \"<string>\"\n}"
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "SignIn",
+									"item": [
+										{
+											"name": "/simapi/v1/Token/SignIn",
+											"request": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"userName\": \"<string>\",\n  \"password\": \"<string>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/simapi/v1/Token/SignIn",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"simapi",
+														"v1",
+														"Token",
+														"SignIn"
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "Success",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Content-Type",
+																"value": "application/json"
+															},
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															},
+															{
+																"description": "Added as a part of security scheme: bearer",
+																"key": "Authorization",
+																"value": "Bearer <token>"
+															}
+														],
+														"body": {
+															"mode": "raw",
+															"raw": "{\n  \"userName\": \"<string>\",\n  \"password\": \"<string>\"\n}",
+															"options": {
+																"raw": {
+																	"headerFamily": "json",
+																	"language": "json"
+																}
+															}
+														},
+														"url": {
+															"raw": "{{baseUrl}}/simapi/v1/Token/SignIn",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"simapi",
+																"v1",
+																"Token",
+																"SignIn"
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"success\": \"<boolean>\",\n  \"message\": \"<string>\",\n  \"response\": {\n    \"id\": \"<integer>\",\n    \"expireTime\": \"<dateTime>\",\n    \"accessToken\": \"<string>\",\n    \"userName\": \"<string>\"\n  }\n}"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Product",
+							"item": [
+								{
+									"name": "{id}",
+									"item": [
+										{
+											"name": "/simapi/v1/Product/:id",
+											"request": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"id\": \"<integer>\",\n  \"name\": \"<string>\",\n  \"url\": \"<string>\",\n  \"tag\": \"<string>\",\n  \"stock\": \"<integer>\",\n  \"price\": \"<double>\",\n  \"properties\": \"<string>\",\n  \"description\": \"<string>\",\n  \"isActive\": \"<integer>\",\n  \"percentageOfPoints\": \"<double>\",\n  \"maxPointAmount\": \"<double>\",\n  \"pointBalance\": \"<double>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/simapi/v1/Product/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"simapi",
+														"v1",
+														"Product",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "<integer>"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "Success",
+													"originalRequest": {
+														"method": "PUT",
+														"header": [
+															{
+																"key": "Content-Type",
+																"value": "application/json"
+															},
+															{
+																"description": "Added as a part of security scheme: bearer",
+																"key": "Authorization",
+																"value": "Bearer <token>"
+															}
+														],
+														"body": {
+															"mode": "raw",
+															"raw": "{\n  \"id\": \"<integer>\",\n  \"name\": \"<string>\",\n  \"url\": \"<string>\",\n  \"tag\": \"<string>\",\n  \"stock\": \"<integer>\",\n  \"price\": \"<double>\",\n  \"properties\": \"<string>\",\n  \"description\": \"<string>\",\n  \"isActive\": \"<integer>\",\n  \"percentageOfPoints\": \"<double>\",\n  \"maxPointAmount\": \"<double>\",\n  \"pointBalance\": \"<double>\"\n}",
+															"options": {
+																"raw": {
+																	"headerFamily": "json",
+																	"language": "json"
+																}
+															}
+														},
+														"url": {
+															"raw": "{{baseUrl}}/simapi/v1/Product/:id",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"simapi",
+																"v1",
+																"Product",
+																":id"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												}
+											]
+										},
+										{
+											"name": "/simapi/v1/Product/:id",
+											"request": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/simapi/v1/Product/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"simapi",
+														"v1",
+														"Product",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "<integer>"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "Success",
+													"originalRequest": {
+														"method": "DELETE",
+														"header": [
+															{
+																"description": "Added as a part of security scheme: bearer",
+																"key": "Authorization",
+																"value": "Bearer <token>"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/simapi/v1/Product/:id",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"simapi",
+																"v1",
+																"Product",
+																":id"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "/simapi/v1/Product",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/simapi/v1/Product",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"simapi",
+												"v1",
+												"Product"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													},
+													{
+														"description": "Added as a part of security scheme: bearer",
+														"key": "Authorization",
+														"value": "Bearer <token>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/simapi/v1/Product",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"simapi",
+														"v1",
+														"Product"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "[\n  {\n    \"id\": \"<integer>\",\n    \"name\": \"<string>\",\n    \"url\": \"<string>\",\n    \"tag\": \"<string>\",\n    \"stock\": \"<integer>\",\n    \"price\": \"<double>\",\n    \"properties\": \"<string>\",\n    \"description\": \"<string>\",\n    \"isActive\": \"<integer>\",\n    \"percentageOfPoints\": \"<double>\",\n    \"maxPointAmount\": \"<double>\",\n    \"pointBalance\": \"<double>\"\n  },\n  {\n    \"id\": \"<integer>\",\n    \"name\": \"<string>\",\n    \"url\": \"<string>\",\n    \"tag\": \"<string>\",\n    \"stock\": \"<integer>\",\n    \"price\": \"<double>\",\n    \"properties\": \"<string>\",\n    \"description\": \"<string>\",\n    \"isActive\": \"<integer>\",\n    \"percentageOfPoints\": \"<double>\",\n    \"maxPointAmount\": \"<double>\",\n    \"pointBalance\": \"<double>\"\n  }\n]"
+										}
+									]
+								},
+								{
+									"name": "/simapi/v1/Product",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"<integer>\",\n  \"name\": \"<string>\",\n  \"url\": \"<string>\",\n  \"tag\": \"<string>\",\n  \"stock\": \"<integer>\",\n  \"price\": \"<double>\",\n  \"properties\": \"<string>\",\n  \"description\": \"<string>\",\n  \"isActive\": \"<integer>\",\n  \"percentageOfPoints\": \"<double>\",\n  \"maxPointAmount\": \"<double>\",\n  \"pointBalance\": \"<double>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/simapi/v1/Product",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"simapi",
+												"v1",
+												"Product"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													},
+													{
+														"description": "Added as a part of security scheme: bearer",
+														"key": "Authorization",
+														"value": "Bearer <token>"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"id\": \"<integer>\",\n  \"name\": \"<string>\",\n  \"url\": \"<string>\",\n  \"tag\": \"<string>\",\n  \"stock\": \"<integer>\",\n  \"price\": \"<double>\",\n  \"properties\": \"<string>\",\n  \"description\": \"<string>\",\n  \"isActive\": \"<integer>\",\n  \"percentageOfPoints\": \"<double>\",\n  \"maxPointAmount\": \"<double>\",\n  \"pointBalance\": \"<double>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/simapi/v1/Product",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"simapi",
+														"v1",
+														"Product"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"id\": \"<integer>\",\n  \"name\": \"<string>\",\n  \"url\": \"<string>\",\n  \"tag\": \"<string>\",\n  \"stock\": \"<integer>\",\n  \"price\": \"<double>\",\n  \"properties\": \"<string>\",\n  \"description\": \"<string>\",\n  \"isActive\": \"<integer>\",\n  \"percentageOfPoints\": \"<double>\",\n  \"maxPointAmount\": \"<double>\",\n  \"pointBalance\": \"<double>\"\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Order",
+							"item": [
+								{
+									"name": "{id}",
+									"item": [
+										{
+											"name": "/simapi/v1/Order/:id",
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/simapi/v1/Order/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"simapi",
+														"v1",
+														"Order",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "<integer>"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "Success",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															},
+															{
+																"description": "Added as a part of security scheme: bearer",
+																"key": "Authorization",
+																"value": "Bearer <token>"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/simapi/v1/Order/:id",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"simapi",
+																"v1",
+																"Order",
+																":id"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"id\": \"<integer>\",\n  \"userId\": \"<integer>\",\n  \"description\": \"<string>\",\n  \"address\": \"<string>\",\n  \"basketAmount\": \"<double>\",\n  \"couponAmount\": \"<double>\",\n  \"couponCode\": \"<string>\",\n  \"pointAmount\": \"<double>\",\n  \"orderDetailResponses\": [\n    {\n      \"id\": \"<integer>\",\n      \"orderId\": \"<integer>\",\n      \"productId\": \"<integer>\",\n      \"productCount\": \"<integer>\",\n      \"productAmount\": \"<double>\",\n      \"productTotalAmount\": \"<double>\"\n    },\n    {\n      \"id\": \"<integer>\",\n      \"orderId\": \"<integer>\",\n      \"productId\": \"<integer>\",\n      \"productCount\": \"<integer>\",\n      \"productAmount\": \"<double>\",\n      \"productTotalAmount\": \"<double>\"\n    }\n  ]\n}"
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "/simapi/v1/Order",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/simapi/v1/Order",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"simapi",
+												"v1",
+												"Order"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													},
+													{
+														"description": "Added as a part of security scheme: bearer",
+														"key": "Authorization",
+														"value": "Bearer <token>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/simapi/v1/Order",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"simapi",
+														"v1",
+														"Order"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "[\n  {\n    \"id\": \"<integer>\",\n    \"userId\": \"<integer>\",\n    \"description\": \"<string>\",\n    \"address\": \"<string>\",\n    \"basketAmount\": \"<double>\",\n    \"couponAmount\": \"<double>\",\n    \"couponCode\": \"<string>\",\n    \"pointAmount\": \"<double>\",\n    \"orderDetailResponses\": [\n      {\n        \"id\": \"<integer>\",\n        \"orderId\": \"<integer>\",\n        \"productId\": \"<integer>\",\n        \"productCount\": \"<integer>\",\n        \"productAmount\": \"<double>\",\n        \"productTotalAmount\": \"<double>\"\n      },\n      {\n        \"id\": \"<integer>\",\n        \"orderId\": \"<integer>\",\n        \"productId\": \"<integer>\",\n        \"productCount\": \"<integer>\",\n        \"productAmount\": \"<double>\",\n        \"productTotalAmount\": \"<double>\"\n      }\n    ]\n  },\n  {\n    \"id\": \"<integer>\",\n    \"userId\": \"<integer>\",\n    \"description\": \"<string>\",\n    \"address\": \"<string>\",\n    \"basketAmount\": \"<double>\",\n    \"couponAmount\": \"<double>\",\n    \"couponCode\": \"<string>\",\n    \"pointAmount\": \"<double>\",\n    \"orderDetailResponses\": [\n      {\n        \"id\": \"<integer>\",\n        \"orderId\": \"<integer>\",\n        \"productId\": \"<integer>\",\n        \"productCount\": \"<integer>\",\n        \"productAmount\": \"<double>\",\n        \"productTotalAmount\": \"<double>\"\n      },\n      {\n        \"id\": \"<integer>\",\n        \"orderId\": \"<integer>\",\n        \"productId\": \"<integer>\",\n        \"productCount\": \"<integer>\",\n        \"productAmount\": \"<double>\",\n        \"productTotalAmount\": \"<double>\"\n      }\n    ]\n  }\n]"
+										}
+									]
+								},
+								{
+									"name": "/simapi/v1/Order",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"userId\": \"<integer>\",\n  \"description\": \"<string>\",\n  \"address\": \"<string>\",\n  \"basketAmount\": \"<double>\",\n  \"couponAmount\": \"<double>\",\n  \"couponCode\": \"<string>\",\n  \"pointAmount\": \"<double>\",\n  \"orderDetailRequests\": [\n    {\n      \"orderId\": \"<integer>\",\n      \"productId\": \"<integer>\",\n      \"productCount\": \"<integer>\",\n      \"productAmount\": \"<double>\",\n      \"productTotalAmount\": \"<double>\"\n    },\n    {\n      \"orderId\": \"<integer>\",\n      \"productId\": \"<integer>\",\n      \"productCount\": \"<integer>\",\n      \"productAmount\": \"<double>\",\n      \"productTotalAmount\": \"<double>\"\n    }\n  ]\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/simapi/v1/Order",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"simapi",
+												"v1",
+												"Order"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													},
+													{
+														"description": "Added as a part of security scheme: bearer",
+														"key": "Authorization",
+														"value": "Bearer <token>"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"userId\": \"<integer>\",\n  \"description\": \"<string>\",\n  \"address\": \"<string>\",\n  \"basketAmount\": \"<double>\",\n  \"couponAmount\": \"<double>\",\n  \"couponCode\": \"<string>\",\n  \"pointAmount\": \"<double>\",\n  \"orderDetailRequests\": [\n    {\n      \"orderId\": \"<integer>\",\n      \"productId\": \"<integer>\",\n      \"productCount\": \"<integer>\",\n      \"productAmount\": \"<double>\",\n      \"productTotalAmount\": \"<double>\"\n    },\n    {\n      \"orderId\": \"<integer>\",\n      \"productId\": \"<integer>\",\n      \"productCount\": \"<integer>\",\n      \"productAmount\": \"<double>\",\n      \"productTotalAmount\": \"<double>\"\n    }\n  ]\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/simapi/v1/Order",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"simapi",
+														"v1",
+														"Order"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"success\": \"<boolean>\",\n  \"message\": \"<string>\"\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Coupon",
+							"item": [
+								{
+									"name": "{id}",
+									"item": [
+										{
+											"name": "/simapi/v1/Coupon/:id",
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/simapi/v1/Coupon/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"simapi",
+														"v1",
+														"Coupon",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "<integer>"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "Success",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															},
+															{
+																"description": "Added as a part of security scheme: bearer",
+																"key": "Authorization",
+																"value": "Bearer <token>"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/simapi/v1/Coupon/:id",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"simapi",
+																"v1",
+																"Coupon",
+																":id"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"id\": \"<integer>\",\n  \"couponCode\": \"<string>\",\n  \"couponAmount\": \"<double>\",\n  \"userId\": \"<integer>\",\n  \"couponExpireDate\": \"<dateTime>\",\n  \"couponRedemptionStatus\": \"<integer>\"\n}"
+												}
+											]
+										},
+										{
+											"name": "/simapi/v1/Coupon/:id",
+											"request": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/simapi/v1/Coupon/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"simapi",
+														"v1",
+														"Coupon",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "<integer>"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "Success",
+													"originalRequest": {
+														"method": "DELETE",
+														"header": [
+															{
+																"description": "Added as a part of security scheme: bearer",
+																"key": "Authorization",
+																"value": "Bearer <token>"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/simapi/v1/Coupon/:id",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"simapi",
+																"v1",
+																"Coupon",
+																":id"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "user",
+									"item": [
+										{
+											"name": "{userId}",
+											"item": [
+												{
+													"name": "/simapi/v1/Coupon/user/:userId",
+													"request": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/simapi/v1/Coupon/user/:userId",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"simapi",
+																"v1",
+																"Coupon",
+																"user",
+																":userId"
+															],
+															"variable": [
+																{
+																	"key": "userId",
+																	"value": "<integer>"
+																}
+															]
+														}
+													},
+													"response": [
+														{
+															"name": "Success",
+															"originalRequest": {
+																"method": "GET",
+																"header": [
+																	{
+																		"key": "Accept",
+																		"value": "text/plain"
+																	},
+																	{
+																		"description": "Added as a part of security scheme: bearer",
+																		"key": "Authorization",
+																		"value": "Bearer <token>"
+																	}
+																],
+																"url": {
+																	"raw": "{{baseUrl}}/simapi/v1/Coupon/user/:userId",
+																	"host": [
+																		"{{baseUrl}}"
+																	],
+																	"path": [
+																		"simapi",
+																		"v1",
+																		"Coupon",
+																		"user",
+																		":userId"
+																	],
+																	"variable": [
+																		{
+																			"key": "userId"
+																		}
+																	]
+																}
+															},
+															"status": "OK",
+															"code": 200,
+															"_postman_previewlanguage": "json",
+															"header": [
+																{
+																	"key": "Content-Type",
+																	"value": "application/json"
+																}
+															],
+															"cookie": [],
+															"body": "[\n  {\n    \"id\": \"<integer>\",\n    \"couponCode\": \"<string>\",\n    \"couponAmount\": \"<double>\",\n    \"userId\": \"<integer>\",\n    \"couponExpireDate\": \"<dateTime>\",\n    \"couponRedemptionStatus\": \"<integer>\"\n  },\n  {\n    \"id\": \"<integer>\",\n    \"couponCode\": \"<string>\",\n    \"couponAmount\": \"<double>\",\n    \"userId\": \"<integer>\",\n    \"couponExpireDate\": \"<dateTime>\",\n    \"couponRedemptionStatus\": \"<integer>\"\n  }\n]"
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "/simapi/v1/Coupon",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/simapi/v1/Coupon",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"simapi",
+												"v1",
+												"Coupon"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													},
+													{
+														"description": "Added as a part of security scheme: bearer",
+														"key": "Authorization",
+														"value": "Bearer <token>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/simapi/v1/Coupon",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"simapi",
+														"v1",
+														"Coupon"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "[\n  {\n    \"id\": \"<integer>\",\n    \"couponCode\": \"<string>\",\n    \"couponAmount\": \"<double>\",\n    \"userId\": \"<integer>\",\n    \"couponExpireDate\": \"<dateTime>\",\n    \"couponRedemptionStatus\": \"<integer>\"\n  },\n  {\n    \"id\": \"<integer>\",\n    \"couponCode\": \"<string>\",\n    \"couponAmount\": \"<double>\",\n    \"userId\": \"<integer>\",\n    \"couponExpireDate\": \"<dateTime>\",\n    \"couponRedemptionStatus\": \"<integer>\"\n  }\n]"
+										}
+									]
+								},
+								{
+									"name": "/simapi/v1/Coupon",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"couponCode\": \"<string>\",\n  \"couponAmount\": \"<double>\",\n  \"userId\": \"<integer>\",\n  \"couponExpireDate\": \"<dateTime>\",\n  \"couponRedemptionStatus\": \"<integer>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/simapi/v1/Coupon",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"simapi",
+												"v1",
+												"Coupon"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													},
+													{
+														"description": "Added as a part of security scheme: bearer",
+														"key": "Authorization",
+														"value": "Bearer <token>"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"couponCode\": \"<string>\",\n  \"couponAmount\": \"<double>\",\n  \"userId\": \"<integer>\",\n  \"couponExpireDate\": \"<dateTime>\",\n  \"couponRedemptionStatus\": \"<integer>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/simapi/v1/Coupon",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"simapi",
+														"v1",
+														"Coupon"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"id\": \"<integer>\",\n  \"couponCode\": \"<string>\",\n  \"couponAmount\": \"<double>\",\n  \"userId\": \"<integer>\",\n  \"couponExpireDate\": \"<dateTime>\",\n  \"couponRedemptionStatus\": \"<integer>\"\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Category",
+							"item": [
+								{
+									"name": "{id}",
+									"item": [
+										{
+											"name": "/simapi/v1/Category/:id",
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/simapi/v1/Category/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"simapi",
+														"v1",
+														"Category",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "<integer>"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "Success",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															},
+															{
+																"description": "Added as a part of security scheme: bearer",
+																"key": "Authorization",
+																"value": "Bearer <token>"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/simapi/v1/Category/:id",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"simapi",
+																"v1",
+																"Category",
+																":id"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"id\": \"<integer>\",\n  \"name\": \"<string>\",\n  \"order\": \"<integer>\"\n}"
+												}
+											]
+										},
+										{
+											"name": "/simapi/v1/Category/:id",
+											"request": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"id\": \"<integer>\",\n  \"name\": \"<string>\",\n  \"url\": \"<string>\",\n  \"tag\": \"<string>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/simapi/v1/Category/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"simapi",
+														"v1",
+														"Category",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "<integer>"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "Success",
+													"originalRequest": {
+														"method": "PUT",
+														"header": [
+															{
+																"key": "Content-Type",
+																"value": "application/json"
+															},
+															{
+																"description": "Added as a part of security scheme: bearer",
+																"key": "Authorization",
+																"value": "Bearer <token>"
+															}
+														],
+														"body": {
+															"mode": "raw",
+															"raw": "{\n  \"id\": \"<integer>\",\n  \"name\": \"<string>\",\n  \"url\": \"<string>\",\n  \"tag\": \"<string>\"\n}",
+															"options": {
+																"raw": {
+																	"headerFamily": "json",
+																	"language": "json"
+																}
+															}
+														},
+														"url": {
+															"raw": "{{baseUrl}}/simapi/v1/Category/:id",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"simapi",
+																"v1",
+																"Category",
+																":id"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												}
+											]
+										},
+										{
+											"name": "/simapi/v1/Category/:id",
+											"request": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/simapi/v1/Category/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"simapi",
+														"v1",
+														"Category",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "<integer>"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "Success",
+													"originalRequest": {
+														"method": "DELETE",
+														"header": [
+															{
+																"description": "Added as a part of security scheme: bearer",
+																"key": "Authorization",
+																"value": "Bearer <token>"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/simapi/v1/Category/:id",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"simapi",
+																"v1",
+																"Category",
+																":id"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "/simapi/v1/Category",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/simapi/v1/Category",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"simapi",
+												"v1",
+												"Category"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													},
+													{
+														"description": "Added as a part of security scheme: bearer",
+														"key": "Authorization",
+														"value": "Bearer <token>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/simapi/v1/Category",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"simapi",
+														"v1",
+														"Category"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "[\n  {\n    \"id\": \"<integer>\",\n    \"name\": \"<string>\",\n    \"order\": \"<integer>\"\n  },\n  {\n    \"id\": \"<integer>\",\n    \"name\": \"<string>\",\n    \"order\": \"<integer>\"\n  }\n]"
+										}
+									]
+								},
+								{
+									"name": "/simapi/v1/Category",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"<integer>\",\n  \"name\": \"<string>\",\n  \"url\": \"<string>\",\n  \"tag\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/simapi/v1/Category",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"simapi",
+												"v1",
+												"Category"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													},
+													{
+														"description": "Added as a part of security scheme: bearer",
+														"key": "Authorization",
+														"value": "Bearer <token>"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"id\": \"<integer>\",\n  \"name\": \"<string>\",\n  \"url\": \"<string>\",\n  \"tag\": \"<string>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/simapi/v1/Category",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"simapi",
+														"v1",
+														"Category"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"id\": \"<integer>\",\n  \"name\": \"<string>\",\n  \"order\": \"<integer>\"\n}"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{bearerToken}}",
+				"type": "string"
+			}
+		]
+	},
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://localhost:7064"
+		}
+	]
+}
